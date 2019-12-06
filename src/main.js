@@ -3,9 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+import element from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+import echarts from 'echarts'
+import VueCookies from 'vue-cookies'
+Vue.prototype.$echarts = echarts
 Vue.config.productionTip = false
-
+Vue.use(element);
+Vue.use(VueCookies);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
